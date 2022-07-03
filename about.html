@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTM6201 Midterm - Polo0016</title>
+    <script src="https://kit.fontawesome.com/544004fc69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="index.html" rel="home">
+    <link href="contact.html" rel="contact-section">
+</head>
+
+<body>
+
+    <header>
+        <!---Creating a conatiner for navegation-->
+
+        <div class="menu">
+
+            <nav class="menu-bar">
+
+                <!---Logo section in container-->
+                <div class="cakepop-logo">
+                    <img src="images/cakepop-logo.png" alt="cakepop bakery logo"/>
+
+                </div>
+                <!---Container to style menu + id for navegation -->
+                <div >
+                    <ul class="menu-block">
+
+                        <!--- Giving a class to home to style in css and href to link the nav to diferrent sections -->
+                        <li id="home"><a href="index.html">Home</a></li>
+                        <li id="about"><a href="about.html">About Us</a></li>
+                        <li id="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        </div>
+
+        <!---Creating a conatiner for the Banner-->
+        <section class="banner-box">
+
+            <div class="welcome-text">
+
+             <h1>The Best Cakepops in the City</h1>
+
+             <!-- Create Order Here us botton-->    
+             <p><input class="order-button" type="submit" name="order-botton" id="order-botton" value="Order here!"></p>
+            </div>
+        </section>
+        
+    </header>
+
+    <main>
+
+        <!---About us section / creating 3 diferent div: one the parent and wo childs to use flex on css / class of wrapper for bleed-->
+
+        <div id="about-section" class="wrapper about-us">
+            <!---section for image -->
+            <section class="about-us-grid">
+            
+                <img src="images/5-unsplash.jpg" alt="picture of the bakery" class="about-image">
+            
+              <!---section for text -->
+                <div class="about-text-section">
+                 <h2>About Us</h2>
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                 </p>
+
+                </div>    
+            </section>
+        </div>
+
+        <!---Our Team section-->
+
+        <section class="our-team">
+
+            <div class="team-title">
+                <h2> Our Team</h2>
+            </div>
+
+            <!-- Jane Doe Section -->
+
+            <div class="team-grid-1">
+
+                <img src="images/jane-unsplash.jpg" alt="Jane Doe photo" class="team-picture">
+              
+                <div class="grid-1-text">
+
+                    <h3>Jane Doe</h3>
+                    <h4>Owner</h4>
+                   
+                    <p class="our-team-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                        Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dane Joe Section -->
+
+            <div class="team-grid-2">
+
+                <img src="images/dane-unsplash.jpg" alt="Dane Joe Photo" class="team-picture">
+              
+                <div class="grid-2-text">
+
+                    <h3>Dane Joe</h3>
+                    <h4>Co-owner</h4>
+
+                    <p class="our-team-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu elit eget lectus vestibulum rutrum sit amet sodales sapien! Nam eu massa sed tortor rhoncus egestas eget vel enim!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="wrapper">
+
+            <p class="footer-font">
+                &copy; Copyright Cakepop Bakery, 2022 - By Angela Polo
+            </p>
+            <p class="footer-font">
+                All images are taken from <a href="https://unsplash.com">Unsplash</a> and <a href="https://pixabay.com">Pixabay</a>
+            </p>
+        </div>  
+    </footer>
+    
+</body>
+</html>
