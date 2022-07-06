@@ -422,7 +422,7 @@ footer {
 	
 	/* Navegation */
 
-	.menu-block {}
+
 
 	/* Welcome banner */
 
@@ -448,7 +448,6 @@ footer {
 		border: 2px solid #99E1F0;
 		margin-top: 5px;
 		font-size: 20px;
-		text-align: ;
 		
 	}
 	
@@ -491,7 +490,7 @@ footer {
 		width: 100%;
 		align-items: center;
 		display: grid; 
-		grid-template-columns:(3, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		column-gap: 5px;
 		grid-template-areas: 
 		"one two three"
@@ -514,7 +513,7 @@ footer {
 	.blog-grid-1 {
 
 		display: grid; 
-		grid-template-rows:(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		row-gap: 5px;
 		grid-template-areas: 
 		"one"
@@ -534,7 +533,7 @@ footer {
 	.blog-grid-2 {
 		display: grid; 
 		align-items: center;
-		grid-template-rows:(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		row-gap: 5px;
 		grid-template-areas: 
 		"one"
@@ -553,7 +552,7 @@ footer {
 
 	.blog-grid-3 {
 		display: grid; 
-		grid-template-rows:(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		row-gap: 5px;
 		grid-template-areas: 
 		"one"
