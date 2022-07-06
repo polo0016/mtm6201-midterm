@@ -62,15 +62,14 @@ h1 {
 	font-size: 4rem;
 	font-weight: bolder;
 	padding: 8px 0;
-	color: white;
-	padding-top: 50px;
-	line-height: 1.5;
+	color: #745594;
+	line-height: 1.2;
 }
 
 h2{ 
 	font-weight: bold;
 	font-size: 3rem;
-	padding: 10px;
+	padding-left: 5px;
 	margin-top: 30px;
     color: #745594;
 }
@@ -80,6 +79,7 @@ h3{
 	font-size: 2rem;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-left: 5px;
 }
 
 h4 {
@@ -112,7 +112,7 @@ body {
 
 /* Adding Color */
 nav {
-	background-color: white;
+	background-color: #EFEFEF;
 	border-bottom: 2px solid #745594;
 }
 
@@ -145,13 +145,12 @@ a:hover {
 }
 
 
-
 /* Positioning logo on the right spot */
 
 .cakepop-logo {
 	display: block;
-	padding-left: 45%;
-	width: 15%;
+	padding-left: 38%;
+	width: 30%;
 	padding-top: 1em;
 }
 
@@ -166,13 +165,14 @@ a:hover {
 	background-size: cover;
 	background-position: center center;
 	padding: 1rem;
+	height: 350px;
 }
 
 .welcome-text {
-	background: rgb(34, 34, 34, 0.6);
-	color: white;
+	background: rgba(255, 255, 255, 0.885);
 	padding: 10px;
 	margin-bottom: 10px;
+	margin-top: 2%;
 }
 
 
@@ -185,193 +185,220 @@ a:hover {
 	font-size: 18px;
 }
 
-/* Styling the Buttons */
-
-.buttons-section {
-	display: block;
-	text-align: center;
-}
-
-.button {
-	background-color: #99E1F0; 
-	border: none;
-	color: #745594;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-
-.buttons-section a {
-	margin: 3rem;
-}
 
 /* Styling the Buttons */
 
 .buttons-section {
 	display: block;
 	text-align: center;
+	width: 100%;
 }
 
 .button {
-	background-color: #99E1F0; 
+	background-color: #745594; 
 	border: none;
-	color: #745594;
-	padding: 15px 32px;
+	color: white;
+	border: 5px solid #99E1F0;
+	padding: 15px 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .buttons-section a {
 	margin: 3rem;
 } 
 
-/* Styling the Blog section */
-
-.blog-grid {
-	padding-left: 100px;
-	padding-right: 100px;
-	display: grid; 
-	grid-template-columns:(1fr 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	row-gap: 5px;
-	column-gap: 3px;
-	grid-template-areas: 
-	"one four"
-	"two five"
-	"three six"
-}
-
-.blog-grid .blog-photo-1:nth-child(1) {
-	grid-area: one;
-}
-
-.blog-grid .blog-photo-2:nth-child(2) {
-	grid-area: two;
-}
-
-.blog-grid .blog-photo-3:nth-child(3) {
-	grid-area: three;
-}
-
-.blog-grid .blog-text-1:nth-child(4) {
-	grid-area: four;
-}
-
-.blog-grid .blog-text-2:nth-child(5) {
-	grid-area: five;
-}
-
-.blog-grid .blog-text-3:nth-child(6) {
-	grid-area: six;
-}
+/* styling the blog with grids */
 
 
-/* Styling the About Us section for Abut page */
+/* blog grid 1 */
 
-#about-section {
-	padding: 10px;
-}
+	.blog-grid-1 {
+		background-color: #EFEFEF;
+        display: grid;
+		align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "one two";
+    }
+
+	.blog-photo-1 {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+	.blog-text-1 {
+      padding-left: 15px;
+	  padding-right: 50px;
+	}
+
+	.blog-grid p {
+		font-size: 1rem;	
+	}
+
+/* blog grid 2 */
+
+	.blog-grid-2 {
+		background-color: #E7FFFE;
+        display: grid;
+		align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "one two";
+    }
+
+	.blog-photo-2 {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+	.blog-text-2 {
+      padding-left: 15px;
+	  padding-right: 50px;
+	}
+
+/* blog grid 3 */
+
+	.blog-grid-3 {
+		background-color: #EFEFEF;
+        display: grid;
+		align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "one two";
+    }
+
+	.blog-photo-3 {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+	.blog-text-3 {
+      padding-left: 15px;
+	  padding-right: 50px;
+	}
+
+	
+/* About Us Page */
+
+	/* Styling the About Us section for Abut page */
+
+	#about-section {
+		padding: 5px;
+	}
+
+	.about-text-section p {
+		padding: 10px;
+	}
 
 
+	/* Our Team section  */
 
-/* Our Team section  */
+	.grid-1-text, .grid-2-text {
+		background: #BDEBF6;
+		padding: 15px;
+	}
 
-.grid-1-text, .grid-2-text {
-	background: #BDEBF6;
-	padding: 15px;
-}
+	.team-title {
+		padding-bottom: 10px;
+	}
 
-.our-team {
-	align-items: center;
-	padding: 20px;
-}
 
-/* Contact Us section */
+	.team-picture {
+		padding-left: 20%;
+		width: 60%;
+		background-color: #EFEFEF;
+	}
 
-.contact-form-grid {
-	width: 85%;
-	padding: 20px;
-}
 
-input[type=text],
-select,
-textarea {
-	width: 100%;
-	padding: 3px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
+/* Contact Page */
 
-.sendbutton {
+	/* Contact Us section */
 
-	padding: 10px;
-	background: #745594;
-	color: white;
-	border: 2px solid #99E1F0;
-	margin-top: 5px;
-	font-size: 18px;
-}
+	.contact-form-grid {
+		width: 90%;
+		padding: 20px;
+	}
 
-/* Creating hours table */
+	input[type=text],
+	select,
+	textarea {
+		width: 100%;
+		padding: 3px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	}
 
-.hours-grid {
-	width: 100%;
-	margin-left: 15px;
-	margin-bottom: 15px;
-}
-table {
-	width: 85%;
-	align-items: center;
-	margin-left: 10px;
-}
+	.sendbutton {
 
-table,
-th,
-tr,
-td {
-	border: 1px solid #99E1F0;
-}
+		padding: 10px;
+		background: #745594;
+		color: white;
+		border: 2px solid #99E1F0;
+		margin-top: 5px;
+		font-size: 18px;
+	}
 
-th,
-td {
-	padding: 1em 0;
-}
-/* Adding color to days and hours */
-th {
-	background: #745594;
-	text-align: center;
-	color: white;
-}
+	/* Creating hours table */
 
-td {
-	padding-left: 20px;
-}
+	.hours-grid {
+		width: 100%;
+		padding: 15px;
+		background-color:#EFEFEF;
+	}
 
-/* Location section */
+	table {
+		width: 85%;
+		align-items: center;
+		margin-left: 10px;
+	}
 
-.location-grid {
-	width: 100%;
-	margin: 15px;
-}
+	table,
+	th,
+	tr,
+	td {
+		border: 1px solid #99E1F0;
+	}
 
-iframe {
-	width: 85%;
-}
+	th,
+	td {
+		padding: 1em 0;
+	}
+	/* Adding color to days and hours */
+	th {
+		background: #745594;
+		text-align: center;
+		color: white;
+	}
+
+	td {
+		padding-left: 20px;
+	}
+
+	/* Location section */
+
+	.location-grid {
+		width: 100%;
+		padding: 20px;
+	}
+
+	iframe {
+		width: 85%;
+	}
 
 /* Adding color and bacground to footer */
 
 footer {
-	background: white;
+	background: #EFEFEF;
 	color: black;
 	border-top: 2px solid #745594;
 	line-height: 2;
 	padding: 20px;
+	margin-top: 15px;
 }
 
 /* ----------Desktop Style---------- */
@@ -380,24 +407,22 @@ footer {
 
 @media screen and (min-width:760px) {
 
+	body {
+		min-width: 760px;
+		max-width: 1920px;
+		margin: 0 auto;
+		background-color: white;
+		align-items: center; 
+	  }
+	  .main {
+		  width: 760px;
+		  align-items: center;
+	  }
+
+	
 	/* Navegation */
 
-	
-	li a {
-		float: left;
-		text-decoration: none;
-		padding: 1em 2.5rem;
-		margin-top: 45px;
-	}
-	
-
-	.cakepop-logo {
-		float: left;
-		background-color: white;
-		padding: 20px 50px;
-		margin: 10px;
-	}
-    
+	.menu-block {}
 
 	/* Welcome banner */
 
@@ -405,48 +430,145 @@ footer {
 		height: 510px;
 	}
 
-	h1 {
-		font-size: 4rem;
+	.welcome-text {
+		margin-top: 5%;	
+		margin: 10%;
+		padding: 20px;
 	}
 
-	/* Styling the blogs sections desktop  */
+	h1 {
+		font-size: 4rem;
+		text-align: center;
+	}
 
-		.blog-grid {
-			padding-left: 100px;
-			padding-right: 100px;
-			display: grid; 
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(2, 1fr);
-			row-gap: 5px;
-			column-gap: 3px;
-			grid-template-areas: 
-			"one two three"
-			"four five six"
-		}
+	.order-button {
+		padding: 10px;
+		background: #745594;
+		color: white;
+		border: 2px solid #99E1F0;
+		margin-top: 5px;
+		font-size: 20px;
+		text-align: ;
+		
+	}
+	
+	.welcome-text p {
+		text-align: center;
+	}
 
-		.blog-grid .blog-photo-1:nth-child(1) {
-			grid-area: one;
-		}
+	/* Styling the Buttons */
+	
+	.buttons-section {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.button {
+		background-color: #745594; 
+		border: none;
+		color: white;
+		border: 5px solid #99E1F0;
+		padding-left: 25px;
+		padding-right: 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+	}
 
-		.blog-grid .blog-photo-2:nth-child(2) {
-			grid-area: two;
-		}
+	.buttons-section a {
+		text-align: center;
+		margin-left: 5rem;
+	} 
 
-		.blog-grid .blog-photo-3:nth-child(3) {
-			grid-area: three;
-		}
+	/* Styling the Blog section */
 
-		.blog-grid .blog-text-1:nth-child(4) {
-			grid-area: four;
-		}
 
-		.blog-grid .blog-text-2:nth-child(5) {
-			grid-area: five;
-		}
+	/*Creating grid for the three blog posts */
 
-		.blog-grid .blog-text-3:nth-child(6) {
-			grid-area: six;
-		}
+	.blog-grid {
+		width: 100%;
+		align-items: center;
+		display: grid; 
+		grid-template-columns:(3, 1fr);
+		column-gap: 5px;
+		grid-template-areas: 
+		"one two three"
+	}
+
+	.blog-grid .blog-grid-1:nth-child(1) {
+		grid-area: one;
+	}
+
+	.blog-grid .blog-grid-2:nth-child(2) {
+		grid-area: two;
+	}
+
+	.blog-grid .blog-grid-3:nth-child(3) {
+		grid-area: three;
+	}
+	
+	/*Creating grid for blog post 1 */
+	
+	.blog-grid-1 {
+
+		display: grid; 
+		grid-template-rows:(2, 1fr);
+		row-gap: 5px;
+		grid-template-areas: 
+		"one"
+		"two"
+	}
+
+	.blog-grid-1 .blog-photo-1:nth-child(1) {
+		grid-area: one;
+	}
+
+	.blog-grid-1 .blog-text-1:nth-child(2) {
+		grid-area: two;
+	}
+
+	/*Creating grid for blog post 2 */
+
+	.blog-grid-2 {
+		display: grid; 
+		align-items: center;
+		grid-template-rows:(2, 1fr);
+		row-gap: 5px;
+		grid-template-areas: 
+		"one"
+		"two"
+	}
+
+	.blog-grid-2 .blog-photo-2:nth-child(1) {
+		grid-area: one;
+	}
+
+	.blog-grid-2 .blog-text-2:nth-child(2) {
+		grid-area: two;
+	}
+
+	/*Creating grid for blog post 3 */
+
+	.blog-grid-3 {
+		display: grid; 
+		grid-template-rows:(2, 1fr);
+		row-gap: 5px;
+		grid-template-areas: 
+		"one"
+		"two"
+	}
+
+	.blog-grid-3 .blog-photo-3:nth-child(1) {
+		grid-area: one;
+	}
+
+	.blog-grid-3 .blog-text-3:nth-child(2) {
+		grid-area: two;
+	}
+
+
 
 	/* styling about us with grid */
 
@@ -486,20 +608,23 @@ footer {
 
 	.team-grid-1 {
 		display: flex;
-		margin: 0 60px 0 60px;
-		height: 400px;
+		margin-right: 200px;
+		height: auto;
+		width: auto;
 	}
 
 	.team-grid-2 {
 		display: flex;
-		flex-direction: row-reverse;
-		margin: 0 60px;
-		height: 400px;
+		margin-right: 200px;
+		height: auto;
+		width: auto;
 	}
 
 	.team-picture {
-		width: 50%;
+		width: 40%;
+		background-color: white;
 	}
+
 
 	/* styling contact us with grid */
 
